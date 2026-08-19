@@ -155,13 +155,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: linear-gradient(120deg, var(--rosa), var(--azul));
+    background: var(--azul);
     color: var(--texto);
     transform: translateY(-2px);
 }
 
 nav ul li a.nav-ativo {
-    background: linear-gradient(120deg, var(--rosa-forte), var(--azul-forte));
+    background: var(--azul-forte);
     color: #fff;
     box-shadow: 0 4px 10px var(--sombra-rosa);
 }
@@ -210,7 +210,7 @@ main {
 /* ===== BOTÕES ===== */
 .btn {
     display: inline-block;
-    background: linear-gradient(120deg, var(--rosa-forte), var(--azul-forte));
+    background: var(--azul-forte);
     color: #fff;
     padding: 13px 28px;
     border: none;
@@ -520,7 +520,6 @@ footer {
     text-align: center;
     padding: 26px 20px;
     margin-top: 50px;
-    border-radius: 40px 40px 0 0;
     overflow: hidden;
 }
 

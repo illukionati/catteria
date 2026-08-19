@@ -1,10 +1,5 @@
-/* =========================================================
-   Catteria - style.css
-   Paleta: rosa pastel + azul bebê + branco
-   Estética: lúdica, orgânica, arredondada (inspirada em
-   cat cafés — formas de "blob", patinhas e cantos únicos)
-   ========================================================= */
-
+/* gente poem rosa pastel e azul bebe sonhei com isso essa semana -eduardo*/
+/*ta pode se*/
 :root {
     --rosa: #ffd8e9;
     --rosa-forte: #ff9dc9;
@@ -18,7 +13,7 @@
     --sombra-rosa: rgba(255, 157, 201, 0.35);
     --sombra-azul: rgba(143, 211, 244, 0.35);
     --borda: #ffe2f0;
-    --raio-organico: 30px 90px 30px 30px;
+    --radius: 30px 90px 30px 30px;
 }
 
 * {
@@ -52,14 +47,12 @@ h1, h2, h3 {
     font-family: 'Fredoka', 'Nunito', Arial, sans-serif;
 }
 
-/* Textura sutil de patinhas, usada em fundos coloridos */
 .padrao-patinhas {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23ffffff' fill-opacity='0.18'%3E%3Ccircle cx='30' cy='38' r='8.5'/%3E%3Ccircle cx='17' cy='23' r='4.6'/%3E%3Ccircle cx='30' cy='16' r='5.2'/%3E%3Ccircle cx='43' cy='23' r='4.6'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 60px 60px;
 }
 
-/* ===== HEADER ===== */
 header {
     position: relative;
     background: linear-gradient(120deg, var(--rosa-forte), var(--azul-forte));
@@ -123,7 +116,6 @@ header::after {
     opacity: 0.95;
 }
 
-/* ===== NAV ===== */
 nav {
     background: var(--branco);
     box-shadow: 0 3px 10px rgba(255, 157, 201, 0.2);
@@ -166,14 +158,12 @@ nav ul li a.nav-ativo {
     box-shadow: 0 4px 10px var(--sombra-rosa);
 }
 
-/* ===== MAIN ===== */
 main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-/* ===== BANNER (index) ===== */
 .banner {
     position: relative;
     text-align: center;
@@ -184,7 +174,7 @@ main {
     width: 100%;
     height: 340px;
     object-fit: cover;
-    border-radius: var(--raio-organico);
+    border-radius: var(--radius);
     box-shadow: 0 12px 30px var(--sombra-rosa);
 }
 
@@ -207,7 +197,6 @@ main {
     color: var(--texto);
 }
 
-/* ===== BOTÕES ===== */
 .btn {
     display: inline-block;
     background: var(--azul-forte);
@@ -228,7 +217,6 @@ main {
     box-shadow: 0 10px 22px var(--sombra-azul);
 }
 
-/* ===== TEXTO DE APRESENTAÇÃO ===== */
 .apresentacao {
     background: var(--branco);
     border: 1px solid var(--borda);
@@ -251,7 +239,6 @@ main {
     text-align: center;
 }
 
-/* ===== GRID DE PRODUTOS (FLEXBOX) ===== */
 .produtos-grid {
     display: flex;
     flex-wrap: wrap;
@@ -264,7 +251,7 @@ main {
     position: relative;
     background-color: var(--branco);
     border: 1px solid var(--borda);
-    border-radius: var(--raio-organico);
+    border-radius: var(--radius);
     width: 230px;
     padding: 16px;
     text-align: center;
@@ -278,7 +265,7 @@ main {
 .produto-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 14px 26px var(--sombra-rosa);
-    border-radius: var(--raio-organico);
+    border-radius: var(--radius);
 }
 
 .produto-card::before {
@@ -320,7 +307,7 @@ main {
     font-family: 'Fredoka', 'Nunito', sans-serif;
 }
 
-/* ===== PROMOÇÕES ===== */
+
 .promo-card {
     background-color: var(--rosa-suave);
     border: 2px dashed var(--rosa-forte);
@@ -339,6 +326,8 @@ main {
     font-family: 'Fredoka', 'Nunito', sans-serif;
 }
 
+/*rosa fica estranho coloquei vermelho tar*/
+/*OKEI*/
 .desconto {
     display: inline-block;
     color: #ff0000;
@@ -348,7 +337,6 @@ main {
     margin-top: 8px;
 }
 
-/* ===== TABELA SIMPLES ===== */
 table {
     width: 100%;
     border-collapse: separate;
@@ -390,10 +378,9 @@ table tr:last-child td {
     border-bottom: none;
 }
 
-/* ===== PÁGINA SOBRE ===== */
 .sobre-imagem {
     margin-bottom: 24px;
-    border-radius: var(--raio-organico);
+    border-radius: var(--radius);
     overflow: hidden;
     box-shadow: 0 12px 30px var(--sombra-azul);
 }
@@ -427,7 +414,6 @@ table tr:last-child td {
     margin-bottom: 12px;
 }
 
-/* ===== FORMULÁRIO DE CONTATO ===== */
 .form-container {
     display: flex;
     justify-content: center;
@@ -504,7 +490,6 @@ form button {
     align-self: center;
 }
 
-/* ===== FOOTER ===== */
 footer {
     position: relative;
     background: linear-gradient(120deg, var(--rosa-forte), var(--azul-forte));
@@ -529,21 +514,4 @@ footer p {
     position: relative;
     font-size: 14px;
     margin: 4px 0;
-}
-
-/* ===== RESPONSIVO ===== */
-@media (max-width: 600px) {
-    .banner img {
-        height: 220px;
-    }
-    .banner-texto {
-        padding: 16px 20px;
-    }
-    .banner-texto h2 {
-        font-size: 22px;
-    }
-    .produto-card {
-        width: 100%;
-        max-width: 280px;
-    }
 }

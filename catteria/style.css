@@ -278,16 +278,10 @@ main {
 .produto-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 14px 26px var(--sombra-rosa);
-    border-radius: 30px 30px 90px 30px;
+    border-radius: var(--raio-organico);
 }
 
 .produto-card::before {
-    content: "🐾";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 34px;
-    height: 34px;
     background: linear-gradient(120deg, var(--rosa), var(--azul));
     border-radius: 50%;
     display: flex;
@@ -347,11 +341,9 @@ main {
 
 .desconto {
     display: inline-block;
-    background: linear-gradient(120deg, var(--rosa-forte), var(--azul-forte));
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 999px;
-    font-size: 13px;
+    color: #ff0000;
+    padding: 1px 12px;
+    font-size: 17px;
     font-weight: 700;
     margin-top: 8px;
 }
@@ -385,7 +377,7 @@ table td {
 }
 
 table th {
-    background: linear-gradient(120deg, var(--rosa-forte), var(--azul-forte));
+    background: var(--azul-forte);
     color: #fff;
     font-family: 'Fredoka', 'Nunito', sans-serif;
 }
